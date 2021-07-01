@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  java8:
+    container_name: myjava8
+    image: java8
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+        - ./app:/usr/app
+    ports:
+      - 3000:3000
+
+    command: bash -c "javac Hello.java && java Hello" # run java file 
+    # command: tail -f /dev/null # keep open container 
+    # command: bash -c "javac Hello.java" to generate only the bytecode
