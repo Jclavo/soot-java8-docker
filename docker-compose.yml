@@ -1,9 +1,9 @@
 version: '3.4'
 
 services:
-  java8:
-    container_name: myjava8
-    image: java8
+  soot-java8:
+    container_name: mysoot-java8
+    image: soot-java8
     build:
       context: .
       dockerfile: ./Dockerfile
