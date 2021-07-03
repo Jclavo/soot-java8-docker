@@ -13,6 +13,10 @@ java -jar [path-from-soot.jar] -help
 java -jar [path-from-soot.jar] -process-dir [path-from-classes]
 [sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/class/hello/
 
+# soot generate file .class, 2da way
+java -cp [path-from-soot.jar] soot.main -process-dir [path-from-classes]
+[sample]: java -cp lib/soot-4.2-full.jar soot.Main -process-dir /usr/app/class/hello/
+
 # soot generate file .jimple
 java -jar [path-from-soot.jar] -process-dir [path-from-classes] -f J 
 [sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/class/hello/ -f J
