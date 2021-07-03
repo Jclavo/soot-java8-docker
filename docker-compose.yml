@@ -10,8 +10,7 @@ services:
     volumes:
         - ./app:/usr/app
     ports:
-      - 3000:3000
+      - 3001:3000
 
-    command: bash -c "javac Hello.java && java Hello" # run java file 
-    # command: tail -f /dev/null # keep open container 
-    # command: bash -c "javac Hello.java" to generate only the bytecode
+    command: tail -f /dev/null # keep open container 
+
