@@ -1,1 +1,3 @@
 app/sootOutput/*
+**/sootOutput/*
+app/class/soot/**.class
