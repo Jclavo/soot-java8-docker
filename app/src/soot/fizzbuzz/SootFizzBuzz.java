@@ -1,4 +1,4 @@
-// package app.class.soot.fizzBuzz;
+package src.soot.fizzbuzz;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import soot.jimple.*;
 import soot.jimple.internal.*;
 import soot.options.Options;
 
-public class sootFizzBuzz {
+public class SootFizzBuzz {
 
     public static String sourceDirectory = "";
     public static String clsName = "";

@@ -1,3 +1,5 @@
+package src.java.fizzbuzz;
+
 public class FizzBuzz {
 
     public void printFizzBuzz(int k){
