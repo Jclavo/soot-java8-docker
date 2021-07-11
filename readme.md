@@ -43,4 +43,5 @@ java -cp [path-from-soot.jar] [path-from-java-class-name]
 - https://github.com/soot-oss/soot
 
 https://www.taufique.me/posts/2017-12-22-first-step-with-custom-analysis-in-soot-framework/
-https://mailman.cs.mcgill.ca/pipermail/soot-list/2015-June/008114.html
+
+http://www.bodden.de/tag/soot-tutorial/
