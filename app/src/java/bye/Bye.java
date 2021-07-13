@@ -1,4 +1,4 @@
-package src.java.fizzbuzz;
+package src.java.bye;
 
 import java.io.*;
 

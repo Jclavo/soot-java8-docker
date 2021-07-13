@@ -1,8 +1,17 @@
-package src.java.fizzbuzz;
+// package src.java.fizzbuzz;
 
-public class FizzBuzz {
+public class FizzBuzz{
 
-    public void printFizzBuzz(int k){
+    public static void main(String[] args){
+       
+        for (int i=1; i<=100; i++)
+            printFizzBuzz(i);
+    }
+
+    public static void test(){
+
+    }
+    public static void printFizzBuzz(int k){
         if (k%15==0)
             System.out.println("FizzBuzz");
         else if (k%5==0)
@@ -13,9 +22,4 @@ public class FizzBuzz {
             System.out.println(k);
     }
 
-    public static void main(String[] args){
-	FizzBuzz fb = new FizzBuzz();
-        for (int i=1; i<=100; i++)
-            fb.printFizzBuzz(i);
-    }
 }
