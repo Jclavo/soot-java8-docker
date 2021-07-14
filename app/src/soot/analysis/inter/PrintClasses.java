@@ -1,3 +1,12 @@
+/**
+ * Title: Intra Analysis using "wjtp" = whole jimple transformation pack
+ * 
+ * Function: Show applications' classes
+ * 
+ * Watch out: This file replace the call from soot.Main
+ * 
+ */
+
 package src.soot.analysis.inter;
 
 import java.util.Map;

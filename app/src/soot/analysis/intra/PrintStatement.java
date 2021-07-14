@@ -1,3 +1,12 @@
+/**
+ * Title: Intra Analysis using "jtp" = jimple transformation pack
+ * 
+ * Function: Show statements from a body
+ * 
+ * Watch out: This file replace the call from soot.Main
+ * 
+ */
+
 package src.soot.analysis.intra;
 
 import java.util.Map;
@@ -27,8 +36,6 @@ public class PrintStatement{
   
           }));
   
-        //Options.v().set_verbose(true);
-        //PhaseOptions.v().setPhaseOption("jap.npc", "on");
         soot.Main.main(args);
       }
 

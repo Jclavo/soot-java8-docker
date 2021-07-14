@@ -1,3 +1,12 @@
+/**
+ * Title: Intra Analysis using "jap" = jimple annotation pack
+ * 
+ * Function: Show units from a body
+ * 
+ * Watch out: This file replace the call from soot.Main
+ * 
+ */
+
 package src.soot.analysis.intra;
 
 import java.util.Map;
@@ -10,7 +19,7 @@ public class PrintUnits{
     public static void main(String[] args) {
 
       PackManager.v().getPack("jap").add(
-        new Transform("jap.myTransform", new BodyTransformer() {
+        new Transform("jap.PrintUnits", new BodyTransformer() {
 
           protected void internalTransform(Body body, String phase, Map options) {
             for (Unit u : body.getUnits()) {
