@@ -18,20 +18,22 @@ public class PrintUnits{
 
     public static void main(String[] args) {
 
-      PackManager.v().getPack("jap").add(
-        new Transform("jap.PrintUnits", new BodyTransformer() {
+      PackManager.v().getPack("jap").add(new Transform("jap.PrintUnits", new MyTransformer()));
 
-          protected void internalTransform(Body body, String phase, Map options) {
-            for (Unit u : body.getUnits()) {
-              // System.out.println(u.getTags());
-              System.out.println(u.toString());
-            }
-          }
-
-        }));
-
+      // set configurations
       Options.v().set_verbose(true);
       PhaseOptions.v().setPhaseOption("jap.npc", "on");
+      
       soot.Main.main(args);
     }
+}
+
+class MyTransformer extends BodyTransformer{
+
+  protected void internalTransform(Body body, String phase, Map options) {
+    for (Unit u : body.getUnits()) {
+      // System.out.println(u.getTags());
+      System.out.println(u.toString());
+    }
+  }
 }
