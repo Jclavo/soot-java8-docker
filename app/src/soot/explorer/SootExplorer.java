@@ -1,3 +1,8 @@
+/**
+ * Explore a body, showing methods, units and branchs
+ * 
+ */
+
 package src.soot.explorer;
 
 import java.io.FileNotFoundException;

@@ -1,12 +1,3 @@
-package src.soot.classcreator;
-
-import soot.*;
-import soot.jimple.*;
-import soot.options.Options;
-import soot.util.*;
-import java.io.*;
-import java.util.*;
-
 /**
  * Example of using Soot to create a classfile from scratch. The 'createclass'
  * example creates a HelloWorld class file using Soot. It proceeds as follows:
@@ -21,6 +12,15 @@ import java.util.*;
  *
  * - Write the result out to a class file.
  */
+
+package src.soot.classcreator;
+
+import soot.*;
+import soot.jimple.*;
+import soot.options.Options;
+import soot.util.*;
+import java.io.*;
+import java.util.*;
 
 public class ClassCreator {
     public static void main(String[] args) throws FileNotFoundException, IOException {
