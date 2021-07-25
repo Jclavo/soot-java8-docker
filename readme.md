@@ -11,26 +11,26 @@ java -jar [path-from-soot.jar] -help
 
 # soot generate file .class
 java -jar [path-from-soot.jar] -process-dir [path-from-classes]
-[sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/class/hello/
+[sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/src/java/hello/
 
 # soot generate file .class, 2da way
 java -cp [path-from-soot.jar] soot.main -process-dir [path-from-classes]
-[sample]: java -cp lib/soot-4.2-full.jar soot.Main -process-dir /usr/app/class/hello/
+[sample]: java -cp lib/soot-4.2-full.jar soot.Main -process-dir /usr/app/src/java/hello/
 
 # soot generate file .jimple
 java -jar [path-from-soot.jar] -process-dir [path-from-classes] -f J 
-[sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/class/hello/ -f J
+[sample]: java -jar lib/soot-4.2-full.jar -process-dir /usr/app/src/java/hello/ -f J
 
 
 # # run java file importing soot 
 
 # generate file .class
 javac -cp [path-from-soot.jar] [path-from-file-.java]  
-[sample]: javac -cp '/usr/app/lib/soot-4.2-full.jar' /usr/app/class/soot/Main.java 
+[sample]: javac -cp '/usr/app/lib/soot-4.2-full.jar' src/soot/fizzbuzz/SootFizzBuzz.java 
 
 # run it
 java -cp [path-from-soot.jar] [path-from-java-class-name]  
-[sample]: java -cp .:/usr/app/lib/soot-4.2-full.jar Main
+[sample]: java -cp .:/usr/app/lib/soot-4.2-full.jar src/soot/fizzbuzz/SootFizzBuzz /usr/app/src/java/fizzbuzz FizzBuzz printFizzBuzz
 
 
 
