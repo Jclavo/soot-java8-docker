@@ -34,14 +34,16 @@ java -cp [path-from-soot.jar] [path-from-java-class-name]
 
 
 
+## SOURCES
 
-# interesting sources
+# About soot
 
 - https://o2lab.github.io/710/p/a1.html#quickstart-soot
 - https://www.sable.mcgill.ca/soot/tutorial/usage/
-- https://www.sable.mcgill.ca/soot/index.html
-- https://github.com/soot-oss/soot
+- http://www.bodden.de/tag/soot-tutorial/
+- https://pt.slideshare.net/lleraromero/soot-for-dummies
 
-https://www.taufique.me/posts/2017-12-22-first-step-with-custom-analysis-in-soot-framework/
+# Control Flow Analysis: CFA
 
-http://www.bodden.de/tag/soot-tutorial/
+- https://github.com/soot-oss/soot/wiki/Implementing-an-intra-procedural-data-flow-analysis-in-Soot
+- http://www.cs.toronto.edu/~aamodkore/notes/dfa-tutorial.html
