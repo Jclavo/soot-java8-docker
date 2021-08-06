@@ -20,8 +20,6 @@ import soot.options.Options;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 
-import DominatorFinder.java;
-
 public class SampleDominatorFinder {
 
   public static void main(String[] args) {

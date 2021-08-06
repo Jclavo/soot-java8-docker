@@ -1,4 +1,4 @@
-// package src.soot.analysis.intra.cfa;
+package src.soot.analysis.intra.cfa;
 
 import java.util.ArrayList;
 import java.util.BitSet;
